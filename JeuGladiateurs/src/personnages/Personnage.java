@@ -2,26 +2,77 @@ package personnages;
 
 public class Personnage {
 
-    // **************************************************************************
-    // **************************************************************************
-    // **************************************************************************
-    // <editor-fold defaultstate="collapsed" desc="Attributs">
-    // TODO : Mettre vos attributs ici
-    // </editor-fold>
+    String Nom;
+    int pointDeVie;
+    int valeurMaxAttaque;
+    int valeurDefense;
+    int initiative;
+   
 
-    // **************************************************************************
-    // **************************************************************************
-    // **************************************************************************
-    // <editor-fold defaultstate="collapsed" desc="Constructeurs et initialisation">
+    
+    
     public Personnage(String nom, int attaqueMax, int defense, int pvs, int ini) {
-        // TODO : Constructeur AVEC paramètres
+        Nom =nom;
+        pointDeVie=pvs;
+        valeurMaxAttaque= attaqueMax;
+        valeurDefense =defense;
+        initiative =ini;
+        
+        
     }
 
     public Personnage() {
+        Nom="";
+        pointDeVie=0;
+        valeurMaxAttaque = 0;
+        valeurDefense = 0;
+         initiative =0;
+      
         // TODO : Constructeur SANS paramètres qui initialise à ZÉRO ou à ""
     }
     // </editor-fold>
 
+    public String getNom() {
+        return Nom;
+    }
+
+    public int getPointDeVie() {
+        return pointDeVie;
+    }
+
+    public int getValeurMaxAttaque() {
+        return valeurMaxAttaque;
+    }
+
+    public int getValeurDefense() {
+        return valeurDefense;
+    }
+
+    public int getInitiative() {
+        return initiative;
+    }
+
+    public void setNom(String Nom) {
+        this.Nom = Nom;
+    }
+
+    public void setPointDeVie(int pointDeVie) {
+        this.pointDeVie = pointDeVie;
+    }
+
+    public void setValeurMaxAttaque(int valeurMaxAttaque) {
+        this.valeurMaxAttaque = valeurMaxAttaque;
+    }
+
+    public void setValeurDefense(int valeurDefense) {
+        this.valeurDefense = valeurDefense;
+    }
+
+    public void setInitiative(int initiative) {
+        this.initiative = initiative;
+    }
+
+    
     // **************************************************************************
     // **************************************************************************
     // **************************************************************************
