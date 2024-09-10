@@ -23,6 +23,7 @@ public class JeuGladiateurs {
 
     Bob.afficherInfoPerso();
     Igor.afficherInfoPerso();
+    affichage.affichageDebutCombat();
     
     // <editor-fold defaultstate="collapsed" desc="Affichage pré-combat">
     // TODO : Afficher les infos de chaque personnage
@@ -38,4 +39,5 @@ public class JeuGladiateurs {
     // </editor-fold>
     }
 
+    
 }
