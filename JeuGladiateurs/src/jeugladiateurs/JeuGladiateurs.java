@@ -28,7 +28,8 @@ public class JeuGladiateurs {
     tour.afficheTour();
     
     
-    personage1.frappePersonnage(personage2);
+    
+    
     // <editor-fold defaultstate="collapsed" desc="Affichage pré-combat">
     // TODO : Afficher les infos de chaque personnage
     // TODO : Afficher le message du début du combat
