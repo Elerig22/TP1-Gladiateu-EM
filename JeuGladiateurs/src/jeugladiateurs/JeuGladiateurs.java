@@ -14,28 +14,32 @@ public class JeuGladiateurs {
     // <editor-fold defaultstate="expanded" desc="Instanciation des objets">
     CompteurDeTour tour = new CompteurDeTour();
     AffichageEcran affichage = new AffichageEcran();
-    Personnage Bob = new Personnage("Bob le malchanceux",15, 15, 70, 15);
-    Personnage Igor = new Personnage("Igor l'empaleur",25, 5, 100, 30);
+    Personnage personage1 = new Personnage("Bob le malchanceux",15, 15, 70, 15);
+    Personnage personage2 = new Personnage("Igor l'empaleur",25, 5, 100, 30);
     
     
     
     // </editor-fold>
 
-    Bob.afficherInfoPerso();
-    Igor.afficherInfoPerso();
+    personage1.afficherInfoPerso();
+    personage2.afficherInfoPerso();
     affichage.affichageDebutCombat();
     
-    // <editor-fold defaultstate="collapsed" desc="Affichage prÃ©-combat">
+    tour.afficheTour();
+    
+    
+    personage1.frappePersonnage(personage2);
+    // <editor-fold defaultstate="collapsed" desc="Affichage pré-combat">
     // TODO : Afficher les infos de chaque personnage
-    // TODO : Afficher le message du dÃ©but du combat
+    // TODO : Afficher le message du début du combat
     // </editor-fold>
 
     // **************************************************************************
     // **************************************************************************
     // **************************************************************************
-    // <editor-fold defaultstate="collapsed" desc="MÃ©canique de combat">
-    // TODO : La boucle contenant les Ã©tapes du combat
-    // TODO : AprÃ¨s la boucle, afficher le rÃ©sultat du combat
+    // <editor-fold defaultstate="collapsed" desc="Mécanique de combat">
+    // TODO : La boucle contenant les étapes du combat
+    // TODO : Après la boucle, afficher le résultat du combat
     // </editor-fold>
     }
 
