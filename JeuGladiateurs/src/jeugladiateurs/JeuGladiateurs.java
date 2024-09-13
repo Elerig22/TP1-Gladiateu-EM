@@ -46,7 +46,7 @@ public class JeuGladiateurs {
     affichage.afficherSeparateurTour();
             
         }
-    
+    affichage.affichageVictoir(personage1, personage2);
     
         
         
